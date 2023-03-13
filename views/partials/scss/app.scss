@@ -1,0 +1,45 @@
+body {
+    padding-top: 50px;
+  }
+
+  .btn {
+    padding: .45rem 1.5rem .35rem;
+  }
+
+
+
+  .intro {
+    height: 100%;
+  }
+  
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #fa709a;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1))
+  }
+  table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 200px;
+  max-width: 350px;
+}
+
+tbody td {
+  font-weight: 400;
+  color: #999999;
+}
+// .mask-custom {
+//   background: rgba(24, 24, 16, .2);
+//   border-radius: 2em;
+//   backdrop-filter: blur(25px);
+//   border: 2px solid rgba(255, 255, 255, 0.05);
+//   background-clip: padding-box;
+//   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+// }

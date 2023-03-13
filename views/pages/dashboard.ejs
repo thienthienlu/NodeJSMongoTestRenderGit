@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('../partials/head'); %>
+</head>
+<body class="">
+    <header>
+       <%- include('../partials/header'); %>
+    </header>
+        <h1 class="alert-success"> <%= tagline %></h1>
+        <section class="intro">
+            <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img1.jpg');">
+              <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0,.35);">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="table-responsive bg-white" data-mdb-perfect-scrollbar="true" style="position: relative; height: 600px;">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">FIRST NAME</th>
+                              <th scope="col">LAST NAME</th>
+                              <th scope="col">BIRTH DAY</th>
+                              <th scope="col">GENDER</th>
+                              <th scope="col">EMAIL</th>
+                              <th scope="col">PHONE</th>
+                              <th scope="col">CITY</th>
+                              <th scope="col">MANAGE</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <% data.forEach( (data) => { %>
+                            <tr>
+                              <th scope="row" style="color: #666666;"> <%= data.firstName %> </th>
+                              <td><%= data.lastName %></td>
+                              <td><%= data.birthDay %></td>
+                              <td><%= data.gender %></td>
+                              <td><%= data.email %></td>
+                              <td><%= data.phoneNumber %></td>
+                              <td><%= data.city %></td>
+                              <td><a href="" class="btn btn-warning">Delete</a> || <a href="" class=" btn btn-info">Update</a></td>
+                            </tr>
+                            <% }); %>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <%- include('../partials/footer'); %>
+          </footer>
+           
+         
+</body>
+
+</html>

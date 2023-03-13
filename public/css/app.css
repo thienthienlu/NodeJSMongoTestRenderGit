@@ -1,0 +1,28 @@
+body {
+  padding-top: 50px; }
+
+.btn {
+  padding: .45rem 1.5rem .35rem; }
+
+.intro {
+  height: 100%; }
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #fa709a;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, #fa709a, #fee140);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, #fa709a, #fee140); }
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 200px;
+  max-width: 350px; }
+
+tbody td {
+  font-weight: 400;
+  color: #999999; }
